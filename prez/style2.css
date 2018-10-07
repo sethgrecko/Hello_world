@@ -1,0 +1,83 @@
+
+header {}
+
+@font-face {
+    font-family: 'beld';
+    src: url('beld.ttf');
+}
+
+body {
+  /* ici tout pour le fond */
+  background-color: black; 
+  background-image: url("http://sethgrecko1.free.fr/img/fond.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100%;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+
+h2 {color: yellow;
+    text-align: center;}
+
+.text {
+  font-family: beld, cursive;
+}
+
+p {
+  color: red;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba(0,0,0,0.7); 
+}
+
+.img_pilot {
+  text-align: center;
+}
+
+table {
+border: none;
+position: inherit;
+width: 100%;
+color: yellow;
+}
+
+td, th {
+}
+
+.vid{text-align: center;}
+.tab{text-align: center;}
+
+
+
+
+.coordonees {
+  float: left;
+  border: 0px solid LightGrey;
+  padding: 0px 0px;  
+  text-align: center;
+  width: 100%;
+  background-color: rgba(100,0,0,0.3);
+}
+
+.coordonees a {
+  position: center;
+  background: red;
+  border: 0px solid red;
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  text-decoration: none;
+
+}
+
+.coordonees a:hover {
+  background: white;
+  border: 0px solid red;
+  color: red;
+}

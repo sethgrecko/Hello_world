@@ -1,0 +1,30 @@
+# Spécification des jeux de caractères des documents (ajoutez les extensions que vous utilisez)
+AddCharset utf-8 .css .xml .po .php .js
+
+# activation php5 (free.fr)
+<ifDefine Free>
+ PHP56 1
+</ifDefine>
+
+# Protection du fichier .htaccess
+<Files .htaccess>
+Order Deny,Allow
+Deny from all
+</Files>
+
+# Protection du fichier wp-config.php
+<files wp-config.php>
+order Deny,Allow
+deny from all
+</files>
+
+# Désactivation de l'affichage des répertoires
+Options All -Indexes
+
+# Inactivation des rewrite rule de WordPress sur FREE.
+<IfDefine !Free>
+# BEGIN WordPress
+
+# END WordPress
+</IfDefine>
+
